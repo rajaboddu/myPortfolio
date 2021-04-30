@@ -1,0 +1,59 @@
+.projects{
+  background: url('../assets/background/circlesBG.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card {
+  border-radius: 5.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 1rem;
+  background: none;
+}
+
+.badge{
+  font-size: 1.4rem;
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #dd5e89 0%,
+    #f7bb97 51%,
+    #dd5e89 100%
+  ); 
+  margin: 8px;
+  padding: 15px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 33px;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-col {
+  animation-name: lightSpeedInLeft;
+  animation-duration: 4s;
+}
+
+.project-col:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.project-col:nth-child(3) {
+  animation-delay: 1s;
+}
+.project-col:nth-child(4) {
+  animation-delay: 1s;
+}

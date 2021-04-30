@@ -1,0 +1,60 @@
+.navbar {
+  z-index: 6;
+  position: absolute;
+  width: 100%;
+  background: none; 
+}
+
+@media screen and (max-width:600px) {
+  .navbar{
+    background-color: white;
+  }
+}
+
+a.navbar-brand {
+  font-size: 2.3rem;
+  font-weight: 900;
+  font-family: "Roboto";   
+}
+
+.navbar-toggler-icon {
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
+.navbar-nav {
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+    margin-left: 60vw;
+  }
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 800;
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color: rgb(250, 6, 6);
+  text-decoration: underline;
+}
+
+.navbar-light .navbar-nav .nav-link:active {
+  text-decoration: underline;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+  }
+}

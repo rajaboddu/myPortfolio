@@ -1,0 +1,102 @@
+.service-details {
+  display: none;
+}
+
+.service-card {
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 4rem;
+}
+
+.service-card > img {
+  width: 38rem;
+  height: 30rem;
+  transition: all 3s;
+}
+
+.service-card:hover img {
+  opacity: 0.1;
+}
+
+.service-details {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-content: center;
+  height: 30rem;
+}
+
+.service-card:hover .service-details {
+  display: block;
+}
+
+#service-name {
+  font-family: "Roboto";
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-left: 10.5rem;
+  margin-top: 1rem;
+  opacity: 0.2;
+  transition: all 2s;
+}
+
+#main-data{
+  justify-content: center;
+  height: 30rem;
+  align-content: center;
+}
+
+#service-para {
+  font-style: italic;
+  font-size: 2rem;
+  margin: 0 3rem;
+  margin: 1rem 2.7rem;
+  opacity: 0.1;
+  transition: all 2s;
+}
+
+@media screen and (max-width: 600px) {
+  #service-para {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin: 1.5rem 3rem;
+  }
+  #service-name {
+    margin-left: 1rem;
+  }
+}
+
+#left-line,
+#right-line {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: black;
+  position: absolute;
+  border-radius: 8rem;
+  transition: all 2s ease-out;
+}
+
+#left-line {
+  top: 0rem;
+  left: 0rem;
+}
+
+#right-line {
+  top: 29.5rem;
+  right: 0rem;
+}
+
+.service-details:hover #left-line {
+  height: 20rem;
+}
+.service-details:hover #right-line {
+  height: 20rem;
+  top: 10rem;
+}
+
+.service-details:hover #service-name,
+#service-para {
+  opacity: 1;
+}

@@ -1,0 +1,48 @@
+.footer {
+  background-color: black;
+  color: azure;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+#email-details,
+#phone-details,
+#email-details > h5,
+#phone-details > h5,#keep-connected > h4 {
+  line-height: 1.4;
+}
+
+#email-details,
+#phone-details {
+  justify-content: center;
+  align-items: center;
+}
+
+#phone-details {
+  margin: 4px 0px 0px -59px;
+}
+
+#email-details > h5,
+#phone-details > h5 {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  font-weight: 300;
+}
+
+.column-2 > #keep-connected,
+#images {
+  align-items: center;
+  justify-content: center;
+  font-size: -1rem;
+  margin-top: 1rem;
+}
+
+#keep-connected > h5 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#images > img {
+  margin: 0rem 1rem 0rem 1rem;
+}
