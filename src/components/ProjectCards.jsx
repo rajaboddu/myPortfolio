@@ -3,24 +3,12 @@ import { Button, Card, Row, Col, Badge } from "react-bootstrap";
 
 function ProjectCards(props) {
   const getVariant = (tech) => {
-    switch (tech) {
-      case "React.js":
-        return "info"
-      case "HTML":
-        return "danger"
-      case "CSS":
-        return "primary"
-      case "Python":
-        return "warning"
-      case "Pygame":
-        return "secondary"
-      case "django":
-        return "dark"
-      case "Redux":
-        return "primary"
-      default:
-        return "success";
+    const tech1 = tech
+    const badgeVariants = {
+      "React.js": "info", "HTML": "danger", "CSS": "primary", "Python": "warning",
+      "Pygame": "secondary", "django": "dark", "Redux": "primary"
     }
+    return badgeVariants[tech1]
   };
   return (
     <Row className="services">

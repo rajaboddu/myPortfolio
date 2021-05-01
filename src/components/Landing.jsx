@@ -1,25 +1,25 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Typed from "react-typed";
-import {  Row, Container } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 import "../css/landing-page.css";
 import Particles from "react-particles-js";
 
 const Landing = () => {
+  useEffect(() => {
+    document.title = "Home Page";
+  });
+
   return (
     <Container fluid className="landing-page">
       <div className="main-content">
         <h1 id="heading-for-page">
-          <Row className='services'>
-            HI, I am
-           </Row>
-          <div>
-            RAJ KUMAR
-          </div>
+          <Row className="services">HI, I am</Row>
+          <div>RAJ KUMAR</div>
         </h1>
         <Row className="typed">
           <Typed
             className="typed-text"
-            strings={["I'm a Student", "Logo Design", "Web Design"]}
+            strings={["I'm a Student","Check out About me", "Check out Services"]}
             typeSpeed={70}
             backSpeed={90}
             loop

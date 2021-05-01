@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 import { myServices } from "../Services/myServices";
 import { Row} from "react-bootstrap";
 import "../css/services.css";
@@ -6,6 +6,9 @@ import Carousel from "react-elastic-carousel";
 import Footer from "../components/footer";
 
 function Services() {
+  useEffect(() => {
+    document.title = "Services"
+  })
   const items = myServices;
   const breakPoints = [
     { width: 1, itemsToShow: 1 },

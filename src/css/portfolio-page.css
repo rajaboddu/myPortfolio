@@ -1,5 +1,5 @@
-.projects{
-  background: url('../assets/background/circlesBG.webp');
+.projects {
+  background: url("../assets/background/circlesBG.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -7,34 +7,34 @@
 
 .card {
   border-radius: 5.5rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 1rem;
   background: none;
 }
 
-.badge{
+.badge {
   font-size: 1.4rem;
 }
 
 .btn {
   background-image: linear-gradient(
     to right,
-    #dd5e89 0%,
-    #f7bb97 51%,
+    #a30202 0%,
+    #f16464 51%,
     #dd5e89 100%
-  ); 
-  margin: 8px;
-  padding: 15px 25px;
+  );
+  margin: 0.8rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 33px;
+  box-shadow: 0 0 20px rgb(238, 238, 238);
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  border-radius: 1rem;
 }
 
 .btn:hover {
@@ -44,7 +44,7 @@
 }
 
 .project-col {
-  animation-name: lightSpeedInLeft;
+  animation-name: fadeIn;
   animation-duration: 4s;
 }
 

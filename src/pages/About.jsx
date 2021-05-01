@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import {Col, Container, Image, Row } from "react-bootstrap";
 import "../css/about-page.css";
 import { skills } from "../Services/skills";
@@ -6,6 +6,9 @@ import CardRows from "../components/CardRows";
 import myImage from "../assets/myPic.jpg";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About"
+  })
   const classNames = {
     columnClass: "m-4 skill-box",
     imageClass: "programming-image",

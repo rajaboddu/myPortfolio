@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { Container, Row } from "react-bootstrap";
 import "../css/portfolio-page.css";
 import "animate.css/animate.css";
@@ -6,6 +6,9 @@ import { projectsRow } from "../Services/projects";
 import ProjectCards from "../components/ProjectCards";
 
 const Portfolio = () => {
+  useEffect(() => {
+    document.title = "My Projects"
+  })
   const projectsRow1 = projectsRow.slice(0, 4);
   const projectsRow2 = projectsRow.slice(4);
   const classNames = {
@@ -19,7 +22,6 @@ const Portfolio = () => {
         <br />
         <br />
         <br />
-        <br/>
         <br/>
         <br/>
         <Row className="services">
